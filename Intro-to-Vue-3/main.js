@@ -1,6 +1,7 @@
 const app = Vue.createApp({
     data(){
         return {
+            cart:0,
             product: 'Dark Chocolate',
             image: './assets/images/dark_choc.jpg',
             inStock: true,
