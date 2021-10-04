@@ -23,6 +23,12 @@
             <p v-if= "stock>10"> In Stock</p>
             <p v-else-if= "stock>0"> Almost sold out</p>
             <p v-else> Out Of Stock</p>
+            <ul>
+              <li v-for= 'detail in details'>{{detail}}</li>
+            </ul>
+            <div v-for= "variant in variants" :key= "variant.id">
+              {{variant.id}} || {{variant.type}}
+            </div>
           </div>
         </div>
       </div>
